@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<input type="text" id="nhap" size="10">
+<button type="button" onclick="nut()" id="bam1"> Click me </button>
+<script>
+    function nut() {
+        let browser = document.getElementById("nhap").value;
+        switch (browser) {
+            case 'Edge':
+                alert("You've got the Edge");
+                break;
+            case 'Chrome':
+            case 'Friefox':
+            case 'Safari':
+            case 'Opera':
+                alert("Okay we support these browsers too");
+                break;
+            default :
+                alert("We hope that this page looks ok!");
+        }
+    }
+</script>
+</body>
+</html>
